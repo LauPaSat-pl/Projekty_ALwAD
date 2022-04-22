@@ -1,0 +1,35 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Zadanie"," ","6"}],"Title",ExpressionUUID -> "f9d76ca3-543d-4157-9c1c-62cede4681f6"],Cell[
+BoxData[
+RowBox[{"a"," ","="," ",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"0",",","1",",","0",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","1",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",","1"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","0",",","0"}],"}"}]}],"}"}]}]],"Input",CellLabel -> "In[1]:= ",
+ExpressionUUID -> "00767493-361d-4303-93ee-4accc0a5a82d"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"MatrixForm","[","a","]"}]],"Input",CellLabel -> "In[2]:= ",ExpressionUUID -> "76acdd50-d186-40e4-a9b3-54127e7d9611"],Cell[
+BoxData[
+TagBox[RowBox[{"(","\[NoBreak]",GridBox[{{"0","1","0","0"},{"0","0","1","0"},{"0","0","0","1"},{"0","0","0","0"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]],StandardForm],"Output",CellLabel -> "Out[2]//MatrixForm= ",
+ExpressionUUID -> "aad995e6-da8d-48fa-9a25-fd6c6fc5b4e9"]},Open],ExpressionUUID -> "cf53bf19-09ed-42ec-b4db-77e7025bbf58"],Cell[
+BoxData[
+RowBox[{"b","=",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"0",",","1",",","0",",","0",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","1",",","0",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",","0",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","0",",","0",",","1"}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",","0",",","0"}],"}"}]}],"}"}]}]],
+"Input",CellLabel -> "In[3]:= ",ExpressionUUID -> "d94891e8-f7fa-4e4b-8c40-23de388c4b32"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"MatrixForm","[","b","]"}]],"Input",CellLabel -> "In[4]:= ",
+ExpressionUUID -> "a1d70668-aa33-4b3e-8b53-efd24609a86f"],Cell[
+BoxData[TagBox[RowBox[
+{"(","\[NoBreak]",GridBox[{{"0","1","0","0","0"},{"0","0","1","0","0"},{"0","0","0","0","0"},{"0","0","0","0","1"},{"0","0","0","0","0"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]],StandardForm],"Output",CellLabel -> "Out[4]//MatrixForm= ",
+ExpressionUUID -> "d91bc788-9c2b-4210-8f8a-3dacacd6cde0"]},Open],ExpressionUUID -> "c89cf3da-8f11-4265-87d5-a3a6d79c2389"],Cell[
+TextData[
+{"Dla"," ","przyk\[LSlash]adu"," ","c",StyleBox[RowBox[{")"," "}]],"jest"," ","to"," ","niemo\:017cliwe",StyleBox[
+RowBox[{","," "}]],"bo"," ","po"," ","ustabilizowaniu"," ","si\:0119"," ","wymiaru"," ","j\:0105dra"," ","przekszta\[LSlash]cenia"," ","niemo\:017cliwa"," ","jest"," ","zmiana"," ","tego"," ","wymiaru"}],
+"Text",ExpressionUUID -> "dcdfe69b-a21d-4b7f-8e34-58aa51130287"]},Open],ExpressionUUID -> "1c2426a4-3332-4a7f-b84c-c712c3f6e76a"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]
