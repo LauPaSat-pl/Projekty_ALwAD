@@ -86,6 +86,7 @@ def exercise_8(generating_matrix, field):
 	plt.matshow(result / 4)
 	plt.colorbar()
 	plt.savefig("res.png")
+	print(a-result)
 	return result
 
 
