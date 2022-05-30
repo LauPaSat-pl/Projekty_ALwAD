@@ -6,7 +6,6 @@ import scipy.optimize as spo
 from matplotlib import pyplot as plt
 from scipy.sparse import csgraph
 from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
 
 
 def function_to_minimize(Y, L, d):
@@ -41,8 +40,8 @@ def optimize_y(graph, d):
 
 
 def check_barbell():
-	n = 5
-	path_len = 2
+	n = 11
+	path_len = 0
 	graph = nx.barbell_graph(n, path_len)
 	plt.figure(figsize=(10, 6))
 	nx.draw(graph, node_color='lightblue',
@@ -51,10 +50,9 @@ def check_barbell():
 	plt.savefig("barbell.png")
 	n = nx.number_of_nodes(graph)
 	alignment_matrix = nx.to_numpy_array(graph)
-	for i in range(2, n + 1, 5):
+	for i in range(2, n + 1, 10):
 		y = optimize_y(alignment_matrix, i)
 		y = np.reshape(y, (n, i))
-		y = StandardScaler().fit_transform(y)
 		pca = PCA(n_components=2)
 		y = pca.fit_transform(y)
 		fig = plt.figure(figsize=(8, 8))
@@ -75,10 +73,9 @@ def check_cycle(n):
 	        node_size=500)
 	plt.savefig("cycle.png")
 	alignment_matrix = nx.to_numpy_array(graph)
-	for i in range(2, n + 1):
+	for i in range(2, n + 1, 5):
 		y = optimize_y(alignment_matrix, i)
 		y = np.reshape(y, (n, i))
-		y = StandardScaler().fit_transform(y)
 		pca = PCA(n_components=2)
 		y = pca.fit_transform(y)
 		fig = plt.figure(figsize=(8, 8))
@@ -92,8 +89,8 @@ def check_cycle(n):
 
 
 def check_random():
-	n = 6
-	graph = nx.gnp_random_graph(n, 2 / n)
+	n = 16
+	graph = nx.gnp_random_graph(n, 3 / n)
 	plt.figure(figsize=(10, 6))
 	nx.draw(graph, node_color='lightblue',
 	        with_labels=True,
@@ -101,10 +98,9 @@ def check_random():
 	plt.savefig("random.png")
 	alignment_matrix = nx.to_numpy_array(graph)
 	print(alignment_matrix)
-	for i in range(2, n + 1, 2):
+	for i in range(2, n + 1, 7):
 		y = optimize_y(alignment_matrix, i)
 		y = np.reshape(y, (n, i))
-		y = StandardScaler().fit_transform(y)
 		pca = PCA(n_components=2)
 		y = pca.fit_transform(y)
 		fig = plt.figure(figsize=(8, 8))
@@ -119,13 +115,13 @@ def check_random():
 
 
 def check_cycles():
-	check_cycle(3)
-	check_cycle(6)
+	check_cycle(12)
+	check_cycle(17)
 
 
 def main():
-	check_barbell()
-	check_cycles()
+	# check_barbell()
+	# check_cycles()
 	check_random()
 
 
